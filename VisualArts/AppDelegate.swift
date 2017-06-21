@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ChameleonFramework
+import RESideMenu
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UIApplication.shared.statusBarStyle = .default
+        UINavigationBar.appearance().tintColor = FlatBlack()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black]
+        UIBarButtonItem.appearance().tintColor = UIColor.init(contrastingBlackOrWhiteColorOn: FlatBlack(), isFlat: true)
+        UINavigationBar.appearance().tintColor = UIColor.init(contrastingBlackOrWhiteColorOn: FlatBlack(), isFlat: true)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.backgroundColor = FlatBlack()
+        
+        let navigationController = UINavigationController.init(rootViewController: HomeViewController())
+        
+        let leftVC = LeftMenuViewController()
+        let sideMenuViewController = RESideMenu.init(contentViewController: navigationController, leftMenuViewController: leftVC, rightMenuViewController: nil)
+        sideMenuViewController?.view.backgroundColor = FlatBlack()
+        sideMenuViewController?.menuPreferredStatusBarStyle = UIStatusBarStyle(rawValue: 1)!
+        sideMenuViewController?.contentViewShadowColor = FlatWhite()
+        sideMenuViewController?.contentViewShadowOffset = CGSize(width: 0, height: 0)
+        sideMenuViewController?.contentViewShadowOpacity = 0.6
+        sideMenuViewController?.contentViewShadowRadius = 4
+        sideMenuViewController?.contentViewShadowEnabled = true
+        sideMenuViewController?.delegate = self
+        
+        window?.rootViewController = sideMenuViewController
+        
+        
         return true
     }
 
@@ -44,3 +72,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: RESideMenuDelegate {
+    
+    func sideMenu(_ sideMenu: RESideMenu!, willShowMenuViewController menuViewController: UIViewController!) {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    func sideMenu(_ sideMenu: RESideMenu!, willHideMenuViewController menuViewController: UIViewController!) {
+        UIApplication.shared.statusBarStyle = .default
+    }
+}

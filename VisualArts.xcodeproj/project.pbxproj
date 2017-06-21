@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		28436F211EFA4C22009C40D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28436F201EFA4C22009C40D4 /* AppDelegate.swift */; };
-		28436F231EFA4C22009C40D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28436F221EFA4C22009C40D4 /* ViewController.swift */; };
 		28436F261EFA4C22009C40D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28436F241EFA4C22009C40D4 /* Main.storyboard */; };
 		28436F281EFA4C22009C40D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28436F271EFA4C22009C40D4 /* Assets.xcassets */; };
 		28436F2B1EFA4C22009C40D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28436F291EFA4C22009C40D4 /* LaunchScreen.storyboard */; };
+		28436F3A1EFA6485009C40D4 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28436F381EFA6485009C40D4 /* LeftMenuViewController.swift */; };
+		28436F3B1EFA6485009C40D4 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28436F391EFA6485009C40D4 /* LeftMenuViewController.xib */; };
+		28436F401EFA7487009C40D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28436F3E1EFA7487009C40D4 /* HomeViewController.swift */; };
+		28436F411EFA7487009C40D4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28436F3F1EFA7487009C40D4 /* HomeViewController.xib */; };
 		CB60D305B863049D76FE6680 /* Pods_VisualArts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0B97FE5F8129465DEA5B06 /* Pods_VisualArts.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +22,15 @@
 		24AC6DAE2D29C5406D5122DB /* Pods-VisualArts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisualArts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VisualArts/Pods-VisualArts.debug.xcconfig"; sourceTree = "<group>"; };
 		28436F1D1EFA4C22009C40D4 /* VisualArts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualArts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28436F201EFA4C22009C40D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28436F221EFA4C22009C40D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28436F251EFA4C22009C40D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28436F271EFA4C22009C40D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28436F2A1EFA4C22009C40D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28436F2C1EFA4C22009C40D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28436F341EFA633E009C40D4 /* VisualArts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualArts-Bridging-Header.h"; sourceTree = "<group>"; };
+		28436F381EFA6485009C40D4 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		28436F391EFA6485009C40D4 /* LeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuViewController.xib; sourceTree = "<group>"; };
+		28436F3E1EFA7487009C40D4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		28436F3F1EFA7487009C40D4 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4C0B97FE5F8129465DEA5B06 /* Pods_VisualArts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisualArts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AF175C29F4C9777CF181C2 /* Pods-VisualArts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisualArts.release.xcconfig"; path = "Pods/Target Support Files/Pods-VisualArts/Pods-VisualArts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,11 +69,15 @@
 			isa = PBXGroup;
 			children = (
 				28436F201EFA4C22009C40D4 /* AppDelegate.swift */,
-				28436F221EFA4C22009C40D4 /* ViewController.swift */,
+				28436F3E1EFA7487009C40D4 /* HomeViewController.swift */,
+				28436F3F1EFA7487009C40D4 /* HomeViewController.xib */,
+				28436F381EFA6485009C40D4 /* LeftMenuViewController.swift */,
+				28436F391EFA6485009C40D4 /* LeftMenuViewController.xib */,
 				28436F241EFA4C22009C40D4 /* Main.storyboard */,
 				28436F271EFA4C22009C40D4 /* Assets.xcassets */,
 				28436F291EFA4C22009C40D4 /* LaunchScreen.storyboard */,
 				28436F2C1EFA4C22009C40D4 /* Info.plist */,
+				28436F341EFA633E009C40D4 /* VisualArts-Bridging-Header.h */,
 			);
 			path = VisualArts;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 					28436F1C1EFA4C22009C40D4 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = UR9T6JCF3L;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +165,8 @@
 			files = (
 				28436F2B1EFA4C22009C40D4 /* LaunchScreen.storyboard in Resources */,
 				28436F281EFA4C22009C40D4 /* Assets.xcassets in Resources */,
+				28436F411EFA7487009C40D4 /* HomeViewController.xib in Resources */,
+				28436F3B1EFA6485009C40D4 /* LeftMenuViewController.xib in Resources */,
 				28436F261EFA4C22009C40D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28436F231EFA4C22009C40D4 /* ViewController.swift in Sources */,
 				28436F211EFA4C22009C40D4 /* AppDelegate.swift in Sources */,
+				28436F3A1EFA6485009C40D4 /* LeftMenuViewController.swift in Sources */,
+				28436F401EFA7487009C40D4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,11 +352,15 @@
 			baseConfigurationReference = 24AC6DAE2D29C5406D5122DB /* Pods-VisualArts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UR9T6JCF3L;
 				INFOPLIST_FILE = VisualArts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WHY.VisualArts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VisualArts/VisualArts-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -351,11 +370,14 @@
 			baseConfigurationReference = 68AF175C29F4C9777CF181C2 /* Pods-VisualArts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UR9T6JCF3L;
 				INFOPLIST_FILE = VisualArts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WHY.VisualArts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VisualArts/VisualArts-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -379,6 +401,7 @@
 				28436F311EFA4C22009C40D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
