@@ -20,7 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.shared.statusBarStyle = .default
         UINavigationBar.appearance().tintColor = FlatBlack()
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black]
+        if let font = UIFont(name: "AmericanTypewriter-Bold", size: 18) {
+            UINavigationBar.appearance().titleTextAttributes = [
+                NSForegroundColorAttributeName : UIColor.black,
+                NSFontAttributeName : font
+            ]
+        }
         UIBarButtonItem.appearance().tintColor = UIColor.init(contrastingBlackOrWhiteColorOn: FlatBlack(), isFlat: true)
         UINavigationBar.appearance().tintColor = UIColor.init(contrastingBlackOrWhiteColorOn: FlatBlack(), isFlat: true)
         
