@@ -12,9 +12,11 @@
 		28436F261EFA4C22009C40D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28436F241EFA4C22009C40D4 /* Main.storyboard */; };
 		28436F281EFA4C22009C40D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28436F271EFA4C22009C40D4 /* Assets.xcassets */; };
 		28436F2B1EFA4C22009C40D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28436F291EFA4C22009C40D4 /* LaunchScreen.storyboard */; };
+		CB60D305B863049D76FE6680 /* Pods_VisualArts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0B97FE5F8129465DEA5B06 /* Pods_VisualArts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24AC6DAE2D29C5406D5122DB /* Pods-VisualArts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisualArts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VisualArts/Pods-VisualArts.debug.xcconfig"; sourceTree = "<group>"; };
 		28436F1D1EFA4C22009C40D4 /* VisualArts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualArts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28436F201EFA4C22009C40D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28436F221EFA4C22009C40D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		28436F271EFA4C22009C40D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28436F2A1EFA4C22009C40D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28436F2C1EFA4C22009C40D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0B97FE5F8129465DEA5B06 /* Pods_VisualArts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisualArts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AF175C29F4C9777CF181C2 /* Pods-VisualArts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisualArts.release.xcconfig"; path = "Pods/Target Support Files/Pods-VisualArts/Pods-VisualArts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB60D305B863049D76FE6680 /* Pods_VisualArts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				28436F1F1EFA4C22009C40D4 /* VisualArts */,
 				28436F1E1EFA4C22009C40D4 /* Products */,
+				69D5DF61B753989CC218E012 /* Pods */,
+				F76635ED001E62A0195768B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = VisualArts;
 			sourceTree = "<group>";
 		};
+		69D5DF61B753989CC218E012 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24AC6DAE2D29C5406D5122DB /* Pods-VisualArts.debug.xcconfig */,
+				68AF175C29F4C9777CF181C2 /* Pods-VisualArts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F76635ED001E62A0195768B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B97FE5F8129465DEA5B06 /* Pods_VisualArts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28436F2F1EFA4C22009C40D4 /* Build configuration list for PBXNativeTarget "VisualArts" */;
 			buildPhases = (
+				AEF301673AA247924398607E /* [CP] Check Pods Manifest.lock */,
 				28436F191EFA4C22009C40D4 /* Sources */,
 				28436F1A1EFA4C22009C40D4 /* Frameworks */,
 				28436F1B1EFA4C22009C40D4 /* Resources */,
+				03835CF42C8DE2A06FE48877 /* [CP] Embed Pods Frameworks */,
+				4D23F71EDFF36ECF29EEC792 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03835CF42C8DE2A06FE48877 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VisualArts/Pods-VisualArts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D23F71EDFF36ECF29EEC792 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VisualArts/Pods-VisualArts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEF301673AA247924398607E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28436F191EFA4C22009C40D4 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		28436F301EFA4C22009C40D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24AC6DAE2D29C5406D5122DB /* Pods-VisualArts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UR9T6JCF3L;
@@ -272,6 +348,7 @@
 		};
 		28436F311EFA4C22009C40D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68AF175C29F4C9777CF181C2 /* Pods-VisualArts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UR9T6JCF3L;
