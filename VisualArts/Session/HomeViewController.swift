@@ -9,6 +9,7 @@
 import UIKit
 import PreviewTransition
 
+
 class HomeViewController: PTTableViewController {
 
     var datas: [String] = []
@@ -18,7 +19,7 @@ class HomeViewController: PTTableViewController {
         
         title = "Visual Arts"
         
-        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.isTranslucent = true
         self.clearsSelectionOnViewWillAppear = false
         
         
@@ -27,9 +28,18 @@ class HomeViewController: PTTableViewController {
         datas = ["menu_background", "menu_background", "menu_background"]
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         tableView.reloadData()
+        
+       let test = HomeListViewModel(service: HomeListServiceIMP())
+       test.fetchedList()
+        test.placeCellModels.producer.startWithValues { (es) in
+            print(es.count)
+        }
+        
     }
-
-  
+    
+    func setTableView() {
+        
+    }
 
     // MARK: - Table view data source
 
